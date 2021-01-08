@@ -4,15 +4,20 @@ import { StyleSheet, View } from 'react-native';
 import HomeScreen from './scr/screens/Home'
 import Post from './scr/components/Post'
 import feed from './assets/AirbnbAssets/feed'
+import SearchReasultsScreen from './scr/screens/searchReasults';
+import SearchResultsScreen from './scr/screens/searchReasults';
 
 const post1=feed[0]
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Post post={post1}/>
+      {/* <Post post={post1}/> */}
     
       {/* <HomeScreen/> */}
+
+       <SearchResultsScreen/>
+
       <StatusBar style="auto" />
     </View>
   );
