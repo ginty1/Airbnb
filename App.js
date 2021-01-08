@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Feather from 'react-native-vector-icons/Fontisto';
 import HomeScreen from './scr/screens/Home'
+import Post from './scr/components/Post'
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeScreen/>
-      <Feather name="blind"/>
+      {/* <HomeScreen/> */}
+      <Post/>
       <StatusBar style="auto" />
     </View>
   );
