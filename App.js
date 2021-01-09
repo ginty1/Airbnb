@@ -6,8 +6,8 @@ import Post from './scr/components/Post'
 import feed from './assets/AirbnbAssets/feed'
 import SearchReasultsScreen from './scr/screens/searchReasults';
 import SearchResultsScreen from './scr/screens/searchReasults';
-
-const post1=feed[0]
+import DestinationSearch from './scr/screens/DestinationSearch'
+// const post1=feed[0]
 
 export default function App() {
   return (
@@ -15,8 +15,8 @@ export default function App() {
       {/* <Post post={post1}/> */}
     
       {/* <HomeScreen/> */}
-
-       <SearchResultsScreen/>
+        <DestinationSearch/>
+       {/* <SearchResultsScreen/> */}
 
       <StatusBar style="auto" />
     </View>
