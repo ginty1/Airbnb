@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import  GuestsScreen from '../screens/Guests/index';
 import DestinationSearch from '../screens/DestinationSearch/index';
 import  HomeTabNavigator from '../HomeTabNavigator/homeTabNav'
+
 const Stack= createStackNavigator();
 
 const Router=(props)=>{

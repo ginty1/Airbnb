@@ -6,6 +6,7 @@ const Post=(props)=>{
   // receving properties from parent as an array of objects
 
   const post=props.post;
+  
 
     return(
         <View style={styles.container}>
