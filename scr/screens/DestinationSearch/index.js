@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
-import { Text, View, TextInput, FlatList } from 'react-native';
+import { Text, View, TextInput, FlatList,Pressable } from 'react-native';
 import styles from './styles';
-import searchResults from '../../../assets/AirbnbAssets/search'
-import Entypo from 'react-native-vector-icons/Entypo'
+import searchResults from '../../../assets/AirbnbAssets/search';
+import Entypo from 'react-native-vector-icons/Entypo';
+import {useNavigation} from '@react-navigation/native';
 const DestinationSearch =()=>{
+ const navigation=useNavigation();
 
   const [inputText, setInputText]=useState('');
 
@@ -20,7 +22,9 @@ const DestinationSearch =()=>{
          data={searchResults}
           renderItem={({item})=> 
           (
-              <View style={styles.row}>
+              <Pressable style={styles.row}
+              onPress={()=>navigation.navigate('Guest')}>
+
                <View style={styles.iconContainer}>
                    <Entypo 
                    name={'location-pin'}
@@ -29,7 +33,7 @@ const DestinationSearch =()=>{
                <Text style={styles.description}>
                    {item.description}
                 </Text>
-            </View>  
+            </Pressable>  
           )}
          />
 
