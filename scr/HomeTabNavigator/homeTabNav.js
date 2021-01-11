@@ -6,6 +6,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import Feather from 'react-native-vector-icons/Feather'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
+import SearchResultsScreen from '../screens/searchReasults/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,15 +16,7 @@ function HomeTabNavigator() {
     tabBarOptions={{
       activeTintColor:'#f15454'
     }}>
-      <Tab.Screen
-       name="Explore"
-        component={HomeScreen}
-        options={{
-            tabBarIcon:({color})=>(
-              <Fontisto name='search' size={25} color={color} />
-            )
-        }} />
-         
+
       <Tab.Screen
        name="Saved"
         component={HomeScreen}
@@ -31,16 +24,30 @@ function HomeTabNavigator() {
             tabBarIcon:({color})=>(
               <FontAwesome name='heart-o' size={25} color={color} />
             )
-        }} />
-         
-      <Tab.Screen
-       name="Airbnb"
-        component={HomeScreen}
-        options={{
-            tabBarIcon:({color})=>(
-              <FontAwesome5 name='airbnb' size={25} color={color} />
-            )
-        }} />
+          }} />
+          
+                <Tab.Screen
+                 name="Explore"
+                  component={SearchResultsScreen}
+                  options={{
+                    tabBarIcon:({color})=>(
+                      <Fontisto name='search' size={25} color={color} />
+                      )
+                    }} />
+                    
+                          <Tab.Screen
+                           name="Airbnb"
+                            component={HomeScreen}
+                            options={{
+                                tabBarIcon:({color})=>(
+                                  <FontAwesome5 name='airbnb' size={25} color={color} />
+                                )
+                            }} />
+                   
+     
+
+
+
          
       <Tab.Screen
        name="Massages"
