@@ -2,7 +2,7 @@ import React from 'react';
 import {View,Text, Image}  from 'react-native'
 import styles from './styles'
 
-const Post=(props)=>{
+const PostScreen=(props)=>{
   // receving properties from parent as an array of objects
 
   const post=props.post;
@@ -35,4 +35,4 @@ const Post=(props)=>{
         </View>
     )
 }
-export default Post;
+export default PostScreen;

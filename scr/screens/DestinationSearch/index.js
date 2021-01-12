@@ -4,7 +4,7 @@ import styles from './styles';
 import searchResults from '../../../assets/AirbnbAssets/search';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {useNavigation} from '@react-navigation/native';
-const DestinationSearch =()=>{
+const DestinationSearchScreen =()=>{
  const navigation=useNavigation();
 
   const [inputText, setInputText]=useState('');
@@ -43,4 +43,4 @@ const DestinationSearch =()=>{
 
 
 }
-export default DestinationSearch;
+export default DestinationSearchScreen;

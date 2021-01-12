@@ -30,7 +30,7 @@ const HomeScreen=(props)=>{
         <Text style={styles.tittle}>Go Near</Text>
         <Pressable 
          style={styles.button}
-         onPress={()=>console.warn('Explore Btn clicked')}
+         onPress={()=>navigation.navigate('Guest')}
          >
              <Text
               style={styles.buttonText}>
